@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>최용우 - 레이아웃2</title>
+    <!-- 페비콘 -->
+    <link rel="shoutcut icon" href="images/fv.png">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="script/jquery-1.11.3.js"></script>
+    <script src="script/jquery.innerfade.js"></script>
+    
+    <script>
+        // $(function(){});
+        $(function(){
+            $('.inner-fade').innerfade({
+                animationtype:'fade',
+                timeout:2000
+            })
+        });
+    </script>
+
+</head>
+<body>
+    <!-- #wrap>header+section.con+section.btn+footer -->
+    <div id="wrap">
+        <header>
+            <!-- logo+menu -->
+            <!-- h1.logo+.menu -->
+            <h1 class="logo">
+                <a href="#"><img src="./images/logo_samsung_black.svg" alt="삼성로고"></a>
+            </h1>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">스토리</a></li>
+                    <li><a href="#">사회공헌</a></li>
+                    <li><a href="#">IR</a></li>
+                    <li><a href="#">인재채용</a></li>
+                </ul>
+            </div>
+        </header>
+        
+        <section class="con">
+            <!-- .slide+.nb (3개이미지/공지사항+배너)-->
+            <div class="slide">
+                <ul class="inner-fade">
+                    <li><a href="https://www.naver.com"><img src="./images/slide-01.png" alt="3D Graphic 1"></a></li>
+                    <li><a href="https://www.naver.com"><img src="./images/slide-02.png" alt="3D Graphic 2"></a></li>
+                    <li><a href="https://www.naver.com"><img src="./images/slide-03.png" alt="3D Graphic 3"></a></li>
+                </ul>
+            </div>
+            <!-- 오른쪽박스 전체 -->
+            <div class="nb">
+                <!-- 공지사항 -->
+                <div class="notice">
+                    <h2>공지사항</h2>
+                    <ul>
+                        <!-- ul>li*6>a{삼성 대형가전 최대 30만원 상품권 증정}+span{21-09-13} -->
+                        <li><a href="https://www.samsung.com/sec/galaxy-z-fold3/launching/">삼성 대형가전 최대 30만원 상품권 증정</a><span>21-09-13</span></li>
+                        <li><a href="#">런칭 구매 혜택</a><span>21-09-13</span></li>
+                        <li><a href="#">Galaxy Z Flip 5G 슈퍼세일</a><span>21-09-13</span></li>
+                        <li><a href="#">갤럭시 워치4 구매 혜택</a><span>21-09-13</span></li>
+                        <li><a href="#">삼성전자 맴버쉽 포인트 60000원 증정</a><span>21-09-13</span></li>
+                        <li><a href="#">삼성카드 10% 청구할인</a><span>21-09-13</span></li>
+                    </ul>
+                </div>
+                <!-- 배너 -->
+                <div class="banner">
+                    <a href="https://www.samsung.com/sec/galaxy-z-fold3/launching/"> <img src="images/banner-gif-01.gif" alt="samsung 삼성 슈퍼세일"></a>
+                </div>
+                
+                
+                
+            </div>
+        </section>
+        <section class="btn">
+                <!-- ul>li>a>img -->
+                <ul>
+                    <li><a href="#"><img src="images/icon-sectors-education.svg" alt="btn_01"></a></li>
+                    <li><a href="#"><img src="images/icon-sectors-distribution.svg" alt="btn_01"></a></li>
+                    <li><a href="#"><img src="images/icon-sectors-hotel.svg" alt="btn_01"></a></li>
+                    <li><a href="#"><img src="images/icon-sectors-medical.svg" alt="btn_01"></a></li>
+                    <li><a href="#"><img src="images/icon-sectors-military.svg" alt="btn_01"></a></li>
+                    <li><a href="#"><img src="images/icon-sectors-produce.svg" alt="btn_01"></a></li>
+                </ul>
+        </section>
+        <footer>
+            <P>
+                삼성전자 대표 : 김기남 / 경기도 수원시 영통구 삼성로 129(매탄동) / 대표번호 : 02-2255-0114 <br />
+                Copyright &copy; 1995-2021  <a href="mailto:samsung@samsung.com" ><strong>Samsung.</strong></a> All Rights Reserved.
+            </P>
+        </footer>
+    </div>
+    
+</body>
+</html>
